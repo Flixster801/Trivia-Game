@@ -1,0 +1,154 @@
+* {
+    font-family: Noto Sans,sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, html {
+    font-size: 14px;
+    line-height: 1.42857143;
+    height: auto;
+    margin: 0;
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+h {
+    max-width: 80%;
+    align-self: center;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.content {
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333;
+    border: 0;
+    border-radius: 3px;
+}
+
+::placeholder {
+    color:#282828;
+    opacity: 1;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    margin: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+    background: #24a0ed;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0480cd;
+    color: #eee;
+}
+
+#correct-button {
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    background: #50c878;
+    margin: 12px 6px;
+}
+
+#correct-button:hover {
+    background: #30a858;
+    & > .check {
+        border-color: #eee;
+    }
+}
+
+#incorrect-button {
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    font-size: 12em;
+    background: #ff6961;
+    margin: 12px 6px;
+}
+
+#incorrect-button:hover {
+    background: #df4941;
+    color: #eee
+}
+
+.check {
+    height: 100px;
+    width: 36px;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
+#skip-button {
+    background: #888;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    h {
+        font-size: 1em;
+    }
+    #correct-button, #incorrect-button {
+        height: 100px;
+        width: 100px;
+        font-size: 6em;
+    }
+    .check {
+        height: 50px;
+        width: 18px;
+        border-bottom: 10px solid #fff;
+        border-right: 10px solid #fff;
+    }
+}
+
+@media (hover :hover) {
+    button:hover {
+        background: #0480cd;
+        color: #eee;
+    }
+
+    #correct-button:hover {
+        background: #30a858;
+        & > .check {
+            border-color: #eee;
+        }
+    }
+
+    #incorrect-button:hover {
+        background: #df4941;
+        color: #eee
+    }
+}

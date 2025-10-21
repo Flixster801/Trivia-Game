@@ -1,0 +1,18 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Felix Desjarlais",
+  "main": "client.js",
+  "type": "module",
+  "scripts": {
+    "devStart": "npx parcel index.html"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
