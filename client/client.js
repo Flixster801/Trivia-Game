@@ -126,11 +126,6 @@ document.addEventListener("click", event => {
     }
 })
 
-// temporary
-socket.on('connect', () => {
-    document.title = socket.id
-})
-
 socket.on('update-room', (code, players) => {
     if (in_game) location.reload()
 
