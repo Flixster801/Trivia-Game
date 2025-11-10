@@ -12,7 +12,7 @@ In the server directory, run the command:
 npm start
 ```
 
-This will start the backend server and display information about what is currenlty happening. Make sure to add the adress of the frontend server to the array on line 18 of ```server.js```.
+This will start the backend server and display information about what is currenlty happening. Make sure to add the address of the frontend server to the array on line 18 of ```server.js```.
 
 ### Client
 
