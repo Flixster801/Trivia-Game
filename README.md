@@ -1,4 +1,4 @@
-# Trivia
+# Trivia Game
 
 A trivia game shell to add questions to. 
 
